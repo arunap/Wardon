@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Wardon.Domain\Wardon.Domain.csproj" />
+    <ProjectReference Include="..\Wardon.Contracts\Wardon.Contracts.csproj" />
+    <ProjectReference Include="..\Wardon.Services\Wardon.Services.csproj" />
     <ProjectReference Include="..\Wardon.Support\Wardon.Support.csproj" />
   </ItemGroup>
 

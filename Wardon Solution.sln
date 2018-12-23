@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardon.Contracts", "Wardon.Contracts\Wardon.Contracts.csproj", "{B7E8DC56-13C8-4782-8A55-CD3F8756521B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wardon.Contracts", "Wardon.Contracts\Wardon.Contracts.csproj", "{B7E8DC56-13C8-4782-8A55-CD3F8756521B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardon.Services", "Wardon.Services\Wardon.Services.csproj", "{8FDF21E2-C7A7-4AE6-9982-6CA2244768B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wardon.Services", "Wardon.Services\Wardon.Services.csproj", "{8FDF21E2-C7A7-4AE6-9982-6CA2244768B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardon.Domain", "Wardon.Domain\Wardon.Domain.csproj", "{6070A780-F160-41C7-B5B8-197F0972F025}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wardon.Domain", "Wardon.Domain\Wardon.Domain.csproj", "{6070A780-F160-41C7-B5B8-197F0972F025}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardon.UnitTests", "Wardon.UnitTests\Wardon.UnitTests.csproj", "{3D573D0D-7971-402B-ABF2-FE6CF7D4AE2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wardon.UnitTests", "Wardon.UnitTests\Wardon.UnitTests.csproj", "{3D573D0D-7971-402B-ABF2-FE6CF7D4AE2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardon.EFCore.Data", "Wardon.EFCore.Data\Wardon.EFCore.Data.csproj", "{22EA2594-A0AE-4405-9916-160D58E8440E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wardon.EFCore.Data", "Wardon.EFCore.Data\Wardon.EFCore.Data.csproj", "{22EA2594-A0AE-4405-9916-160D58E8440E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardon.ServiceFactories", "Wardon.ServiceFactories\Wardon.ServiceFactories.csproj", "{A40759CA-4E2A-4791-9E50-DADA3D608A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardon.Support", "Wardon.Support\Wardon.Support.csproj", "{F63D5CC7-61F9-4959-93DF-9732A7FAF3D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wardon.Api", "Wardon.Api\Wardon.Api.csproj", "{1CE6A804-5B7D-438E-BAA9-7450FE58354D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{22EA2594-A0AE-4405-9916-160D58E8440E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22EA2594-A0AE-4405-9916-160D58E8440E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22EA2594-A0AE-4405-9916-160D58E8440E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40759CA-4E2A-4791-9E50-DADA3D608A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40759CA-4E2A-4791-9E50-DADA3D608A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40759CA-4E2A-4791-9E50-DADA3D608A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40759CA-4E2A-4791-9E50-DADA3D608A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F63D5CC7-61F9-4959-93DF-9732A7FAF3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63D5CC7-61F9-4959-93DF-9732A7FAF3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63D5CC7-61F9-4959-93DF-9732A7FAF3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63D5CC7-61F9-4959-93DF-9732A7FAF3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CE6A804-5B7D-438E-BAA9-7450FE58354D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE6A804-5B7D-438E-BAA9-7450FE58354D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE6A804-5B7D-438E-BAA9-7450FE58354D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE6A804-5B7D-438E-BAA9-7450FE58354D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
