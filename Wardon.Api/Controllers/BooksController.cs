@@ -16,10 +16,7 @@ namespace Wardon.Api.Controllers
     {
         private readonly IBookService _bookService;
 
-        public BooksController(IBookService bookService)
-        {
-            _bookService = bookService;
-        }
+        public BooksController(IBookService bookService) => _bookService = bookService;
 
         // GET: api/Books
         [HttpGet]
@@ -50,7 +47,9 @@ namespace Wardon.Api.Controllers
         public async Task<IActionResult> Post([FromBody] BookViewModel value)
         {
             var result = await _bookService.InsertBookAsync(value);
-            return Ok(result);
+            if (result)
+                return Ok(result);
+            return BadRequest();
         }
 
         // PUT: api/Books/5
@@ -58,7 +57,9 @@ namespace Wardon.Api.Controllers
         public async Task<IActionResult> Put(int id, [FromBody] BookViewModel value)
         {
             var result = await _bookService.UpdateBookAsync(value);
-            return Ok(result);
+            if (result)
+                return Ok(result);
+            return BadRequest();
         }
 
         // DELETE: api/ApiWithActions/5
@@ -66,7 +67,9 @@ namespace Wardon.Api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _bookService.DeleteBookAsync(id);
-            return Ok(result);
+            if (result)
+                return Ok(result);
+            return BadRequest();
         }
     }
 }
